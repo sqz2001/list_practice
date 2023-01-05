@@ -31,3 +31,20 @@ third_guest = guestlist[2]
 print(f"{third_guest}, you are such a dawg, join us at Hooters")
 
 
+"""The next practice problem says to use a print statement to inform my guests that Hooters upgraded us to a larger table"""
+for name in guestlist:
+    print(f"{name}, Hooters has upgraded our table to the mega-milker station!")
+for name in generic_list:
+    print(f"{name}, Hooters has upgraded our table to the mega-milker station!")
+
+
+"""The next practice problem says to add one new guest to the beginning of the list, one to the middle, and one to the end,
+and then to resend invites out"""
+#join guestlist with generic_list
+joinedlist = guestlist + generic_list
+joinedlist.insert(0, "Bill Nye")
+joinedlist.insert(3, "Stacy's mom")
+joinedlist.append("Joe Mama")
+
+for name in joinedlist:
+    print(f"{name}, last and final call for Hooters")
